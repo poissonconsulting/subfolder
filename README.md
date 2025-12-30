@@ -21,4 +21,12 @@ As before all exported functions will be prefixed by sbf\_.
 Unless specified it will use the same function names except main will be
 renamed to output which will be the default value.
 
+It should not create any directories except those at the level of output
+and its subfolders to avoid possibility of unintentionally creating
+directories in the wrong place. It should be up to the user to create
+the higher level directories manually.
+
+Options should be save in human readable form perhaps TOML or is there a
+better format?
+
 It will also use … to ensure name based argument matching.
